@@ -1,0 +1,10 @@
+emmet
+https://www.emmet.io/
+Permitirá escribir código html de manera más ágil -> ! | div#id (atajos)
+
+Más atajos:
+visual studio code cheat sheet windows -> tabla de atajos de teclado 
+
+W3C define el standar 
+https://developer.mozilla.org/en-US/docs/web/html
+https://htmlreference.io/
