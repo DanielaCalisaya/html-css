@@ -8,3 +8,5 @@ visual studio code cheat sheet windows -> tabla de atajos de teclado
 W3C define el standar 
 https://developer.mozilla.org/en-US/docs/web/html
 https://htmlreference.io/
+
+Periodic table html tags
