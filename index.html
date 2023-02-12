@@ -15,13 +15,15 @@
     <!-- TITLE entre 55 y 66 carácteres. Atributos name y content: description y en content un párrafo que no pase de 165 caracteres, 
     esto nos ayudará con el seo, el título y la descripción no debe ser lo mismo -->
     <title>Document</title>
+    <!-- linkeo del css, la mejor forma -->
+    <link rel="stylesheet" href="assets/style.css">
 </head>
 
 <body> <!-- ETIQUETAS Identación!! las etiquetas tienen una jerarquia -->
     <!-- p, no tener texto suelto en el body sino que siempre dentro de una etiqueta -->
     <p>Primer documento html</p>
     <!-- h1 - h6 Encabezados -->
-    <h1>Encabezado 1</h1>
+    <h1>Encabezado 1 - uno solo por documento html</h1>
     <h2>Encabezado 2</h2>
     <h3>Encabezado 3</h3>
     <h4>Encabezado 4</h4>
@@ -58,6 +60,73 @@
     <br><!-- es de un solo tag, no es necesario cerrarla -->
     <hr><!-- salto semántico de bloques de contenido -->
     <h2>Etiquetas de formateo</h2>
-    
+    <!-- pre, (preformateo) al poner cosas en forma de lista dentro de una etiqueta pre se respetará el formato que le estoy dando, y cambia la tipografia -->
+    <p>
+        <pre>
+            Tareas para hacer:
+                -html
+                -molde en papel de la blusa
+                -avanzar con las clases
+        </pre>
+    </p>
+    <!-- code, formato y tipografia en formato código, podemos poner un ejemplo de código -->
+    <p>
+        <code>Este texto está en formato de código</code>
+    </p>
+    <p>
+        <pre>
+            <code>
+                ((d) => { 
+                    const $btnMenu = d.querySelector(".header__container__menu__btn"),
+                    $menu = d.querySelector(".header__container__menu")
+                
+                    $btnMenu.addEventListener("click", e => {  
+                        $btnMenu.firstElementChild.classList.toggle("none") 
+                        $btnMenu.lastElementChild.classList.toggle("none")
+                        $menu.classList.toggle("is-active"); 
+                    })
+                
+                })(document);
+            </code>
+        </pre>
+    </p>
+    <hr>
+    <h2>Etiquetas semánticas de estructura</h2>
+    <div>Esta etiqueta contenedora no tiene semántica</div>
+    <header>header - Cabecera de un sitio web o una sección</header>
+    <main>main - Define la sección principal del documento(debe haber una sola etiqueta main en el documento)</main>
+    <footer>footer - Pié de página de un sitio web o de una sección</footer>
+    <nav>nav - Representa una navegación</nav>
+    <article>article - Representa una sección autocontenido(que por si sola se explica)</article>
+    <aside>aside - Representa contenido complementario o secundario(por ejemplo, publicidad)</aside>
+    <section>section - Representa una sección de contenido genérico</section>
+    <address>address - Representa una dirección física o información de contacto</address>
+    <hr>
+    <h2>Etiquetas de bloque VS etiquetas de linea</h2>
+    <div style="background-color: yellow;">La etiqueta de bloque por excelencia es la div, una etiqueta de bloque es aquella que genera saltos de linea con sus etiquetas hermanas, ocupará todo el ancho de la pantalla</div>
+    <span style="background-color: greenyellow;">La etiqueta de linea por excelencia es el span, uan etiqueta de linea ocupa solo el espacio que tiene su contenido</span>
+    <hr>
+    <h2>Estilos css en html</h2>
+    <span style="background-color: violet;">Estilos aqui</span><!-- mediante el atributo style -->
+    <!-- sino dentro del head, se coloca una etiqueta style y ahi escribo el css, también puede estar dentro del body, pero es preferible que esté dentro del head -->
+    <hr>
+    <h2>Imágenes</h2>
+    <!-- <img src="" alt="Texto alternativo por si la imágen está rota, además de ser útil para las personas no videntes, le da una descripción"> -->
+    <!-- acepta varios formatos como svg, jpg, png y gif -->
+    <!-- png -->
+    <img src="img/start.png" alt="Nam♥">
+    <!-- jpg -->
+    <img src="img/winter.jpg" alt="Invierno">
+    <!-- gif -->
+    <img src="img/arnold.gif" alt="Arnold el cabeza de balón♥">
+    <!-- svg -->
+    <img src="img/happy-face.svg" alt="Happy">
+    <hr>
+    <h2>Script en html</h2>
+    <!-- Antes de la etiqueta de cierre del body -->
+    <script>
+        console.log("Aprendiendo y repasando HTML5")
+    </script>
+    <script src="assets/code.js"></script><!-- src source, origen fuente -->
 </body>
 </html>
