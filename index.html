@@ -191,6 +191,64 @@
         <dd>Es el lenguaje de la web</dd>
     </dl>
     <hr>
+    <h2>Tablas</h2>
+    <table>
+        <!-- table roud fila de tabla, es lo primero que hay que definir -->
+        <tr>
+            <!-- celdas -->
+            <td>Nombre</td>
+            <td>Color</td>
+            <td>Edad</td>
+        </tr>
+        <tr>
+            <td>Chingu</td>
+            <td>Negro</td>
+            <td>Cuatro</td>
+        </tr>
+        <tr>
+            <td>Minki</td>
+            <td>Tricolor</td>
+            <td>Cuatro</td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <table><!-- table head, footer -->
+        <thead>
+            <tr>
+                <!-- con el atributo colspan hago que ocupe las 3 filas -->
+                <th colspan="3">Tabla de los gatos</th>
+            </tr>
+            <tr>
+                <th>Nombre</th>
+                <th>Color</th>
+                <th>Edad</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Nombre</td>
+                <td>Color</td>
+                <td>Edad</td>
+            </tr>
+            <tr>
+                <td>Chingu</td>
+                <td>Negro</td>
+                <td rowspan="2">Cuatro</td>
+                <!-- atributo rowspan para que el contenido de la tabla ocupe mas filas -->
+            </tr>
+            <tr>
+                <td>Minki</td>
+                <td>Tricolor</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="3"><small>Estos michinos son muy mañosos</small></th>
+            </tr>
+        </tfoot>
+    </table>
+    <hr>
     <h2>Script en html</h2>
     <!-- Antes de la etiqueta de cierre del body -->
     <script>
