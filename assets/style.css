@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth; /* realiza un efecto de animacion al hacer scroll mediante los enlaces internos */
+}
 body {
     font-family: sans-serif;
 }

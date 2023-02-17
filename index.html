@@ -21,16 +21,43 @@
 
 <body> <!-- ETIQUETAS Identación!! las etiquetas tienen una jerarquia -->
     <!-- p, no tener texto suelto en el body sino que siempre dentro de una etiqueta -->
+    <h2 id="#inicio">Aprendiendo HTML5</h2>
     <p>Primer documento html</p>
+    <h3>Temario del curso</h3>
+    <ul>
+        <!-- ul>li*18>a -->
+        <li><a href="index.html#encabezados">Encabezados HTML</a></li>
+        <li><a href="index.html#texto-basico">Etiquetas de texto básicas</a></li>
+        <li><a href="index.html#texto-semantico">Etiquetas de texto semánticas</a></li>
+        <li><a href="index.html#etiquetas-saltos">Etiquetas de salto</a></li>
+        <li><a href="index.html#etiquetas-formateo">Etiquetas de formateo</a></li>
+        <li><a href="index.html#etiquetas-estructurales">Etiquetas semánticas de estructura</a></li>
+        <li><a href="index.html#etiquetas-bloque-linea">Etiquetas de bloque VS etiquetas de linea</a></li>
+        <li><a href="index.html#estilos">Estilos css en html</a></li>
+        <li><a href="index.html#imagenes">Imágenes</a></li>
+        <li><a href="index.html#svg">SVG</a></li>
+        <li><a href="index.html#figuras">Figuras</a></li>
+        <li><a href="index.html#listas-ordenadas">Listas ordenadas</a></li>
+        <li><a href="index.html#listas-desordenadas">Listas desordenadas</a></li>
+        <li><a href="index.html#lista-definicion">Listas de definición</a></li>
+        <li><a href="index.html#tablas">Tablas</a></li>
+        <li><a href="index.html#enlaces">Enlaces</a></li>
+        <li><a href="index.html#script">Script</a></li>
+        <li><a href=""></a></li>
+    </ul>
+    <a href="index.html#inicio">☝️</a>
+    <hr>
     <!-- h1 - h6 Encabezados -->
+    <h2 id="encabezados">Encabezados HTML</h2>
     <h1>Encabezado 1 - uno solo por documento html</h1>
     <h2>Encabezado 2</h2>
     <h3>Encabezado 3</h3>
     <h4>Encabezado 4</h4>
     <h5>Encabezado 5</h5>
     <h6>Encabezado 6</h6>
+    <a href="index.html#inicio">☝️</a>
     <hr>
-    <h2>etiquetas de texto básicas</h2> 
+    <h2 id="texto-basico">Etiquetas de texto básicas</h2> 
     <!-- b bold, letra más gruesa-->
     <!-- i itálica, cambia un poco la letra -->
     <!-- u, subrayado -->
@@ -42,8 +69,9 @@
     <!-- sup, superindice -->
     <!-- sub, subindice, para poner algo sobre una letra, ejemplo h2o -->
     <p>e=mc<sup>2</sup>, H<sub>2</sub>O</p> 
+    <a href="index.html#inicio">☝️</a>
     <hr>
-    <h2>Etiquetas de texto semánticas</h2> 
+    <h2 id="texto-semantico">Etiquetas de texto semánticas</h2> 
     <!-- strong, texto importante, estas etiquetas son semánticas porque dan cierto significado -->
     <strong>texto importante</strong>
     <!-- em, tiene énfasis -->
@@ -54,12 +82,14 @@
     <cite>Sócrates</cite>
     <!-- time, para el tiempo y la hora -->
     <p>The game starts at <time datetime="2017-04-29T19:00">19:00</time>.</p>
+    <a href="index.html#inicio">☝️</a>
     <hr>
-    <h2>Etiquetas de salto</h2> 
+    <h2 id="etiquetas-saltos">Etiquetas de salto</h2> 
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>Velit quis aspernatur nesciunt neque illo magnam laudantium sed nam alias, <br>ullam delectus explicabo, cum tempore cupiditate dicta harum laborum quas quo?</p>
     <br><!-- es de un solo tag, no es necesario cerrarla -->
+    <a href="index.html#inicio">☝️</a>
     <hr><!-- salto semántico de bloques de contenido -->
-    <h2>Etiquetas de formateo</h2>
+    <h2 id="etiquetas-formateo">Etiquetas de formateo</h2>
     <!-- pre, (preformateo) al poner cosas en forma de lista dentro de una etiqueta pre se respetará el formato que le estoy dando, y cambia la tipografia -->
     <p>
         <pre>
@@ -90,8 +120,9 @@
             </code>
         </pre>
     </p>
+    <a href="index.html#inicio">☝️</a>
     <hr>
-    <h2>Etiquetas semánticas de estructura</h2>
+    <h2 id="etiquetas-estructurales">Etiquetas semánticas de estructura</h2>
     <div>Esta etiqueta contenedora no tiene semántica</div>
     <header>header - Cabecera de un sitio web o una sección</header>
     <main>main - Define la sección principal del documento(debe haber una sola etiqueta main en el documento)</main>
@@ -101,16 +132,19 @@
     <aside>aside - Representa contenido complementario o secundario(por ejemplo, publicidad)</aside>
     <section>section - Representa una sección de contenido genérico</section>
     <address>address - Representa una dirección física o información de contacto</address>
+    <a href="index.html#inicio">☝️</a>
     <hr>
-    <h2>Etiquetas de bloque VS etiquetas de linea</h2>
+    <h2 id="etiquetas-bloque-linea">Etiquetas de bloque VS etiquetas de linea</h2>
     <div style="background-color: yellow;">La etiqueta de bloque por excelencia es la div, una etiqueta de bloque es aquella que genera saltos de linea con sus etiquetas hermanas, ocupará todo el ancho de la pantalla</div>
     <span style="background-color: greenyellow;">La etiqueta de linea por excelencia es el span, uan etiqueta de linea ocupa solo el espacio que tiene su contenido</span>
+    <a href="index.html#inicio">☝️</a>
     <hr>
-    <h2>Estilos css en html</h2>
+    <h2 id="estilos">Estilos css en html</h2>
     <span style="background-color: violet;">Estilos aqui</span><!-- mediante el atributo style -->
     <!-- sino dentro del head, se coloca una etiqueta style y ahi escribo el css, también puede estar dentro del body, pero es preferible que esté dentro del head -->
+    <a href="index.html#inicio">☝️</a>
     <hr>
-    <h2>Imágenes</h2>
+    <h2 id="imagenes">Imágenes</h2>
     <!-- <img src="" alt="Texto alternativo por si la imágen está rota, además de ser útil para las personas no videntes, le da una descripción"> -->
     <!-- acepta varios formatos como svg, jpg, png y gif -->
     <!-- png -->
@@ -121,19 +155,22 @@
     <img src="img/arnold.gif" alt="Arnold el cabeza de balón♥">
     <!-- svg -->
     <img src="img/happy-face.svg" alt="Happy">
+    <a href="index.html#inicio">☝️</a>
     <hr>
-    <h2>SVG</h2>
+    <h2 id="svg">SVG</h2>
     <h3>Si realizo un diseño en Ilustrator puedo descargarlo en SVG</h3> 
     <img src="img/contact-iphone.svg" alt="Iphone">
+    <a href="index.html#inicio">☝️</a>
     <hr>
-    <h2>Figuras</h2>
+    <h2 id="figuras">Figuras</h2>
     <figure>
         <img src="img/start.png" alt="Nam♥">
         <!-- Puedo poner una nota al pie de la foto con la etiqueta figcaption-->
         <figcaption>Nam♥</figcaption>
     </figure>
+    <a href="index.html#inicio">☝️</a>
     <hr>
-    <h2>Listas ordenadas</h2>
+    <h2 id="listas-ordenadas">Listas ordenadas</h2>
     <ol>
         <li>Verano</li>
         <li>Otoño</li>
@@ -162,8 +199,9 @@
         <li>Invierno</li>
         <li>Primavera</li>
     </ol>
+    <a href="index.html#inicio">☝️</a>
     <hr>
-    <h2>Listas desordenadas</h2>
+    <h2 id="listas-desordenadas">Listas desordenadas</h2>
     <!-- más atributos como disc(por defecto), circle, square -->
     <ul type="circle">
         <li>Mañana</li>
@@ -177,8 +215,9 @@
         <li>Noche</li>
         <li>Madrugada</li>
     </ul>
+    <a href="index.html#inicio">☝️</a>
     <hr>
-    <h2>Listas de definición</h2>
+    <h2 id="lista-definicion">Listas de definición</h2>
     <!-- se crean con la etiqueta dl(definition list) -->
     <dl>
         <!-- dt: definition term(termino a definir) -->
@@ -190,8 +229,9 @@
         <dt>Javascript</dt>
         <dd>Es el lenguaje de la web</dd>
     </dl>
+    <a href="index.html#inicio">☝️</a>
     <hr>
-    <h2>Tablas</h2>
+    <h2 id="tablas">Tablas</h2>
     <table>
         <!-- table roud fila de tabla, es lo primero que hay que definir -->
         <tr>
@@ -248,8 +288,9 @@
             </tr>
         </tfoot>
     </table>
+    <a href="index.html#inicio">☝️</a>
     <hr>
-    <h2>Enlaces</h2>
+    <h2 id="enlaces">Enlaces</h2>
     <!-- enlace interno -->
     <a href="otroIndex.html">Hacia la otra página</a>
     <br>
@@ -263,13 +304,15 @@
     <a href="https://danielacalisaya.github.io/myPortfolio/" target="_blank">
         <img src="img/happy-face.svg" alt="Mi página">
     </a>
-    4.00.50
+    <a href="index.html#inicio">☝️</a>
     <hr>
-    <h2>Script en html</h2>
+    <h2 id="script">Script en html</h2>
     <!-- Antes de la etiqueta de cierre del body -->
     <script>
         console.log("Aprendiendo y repasando HTML5")
     </script>
     <script src="assets/code.js"></script><!-- src source, origen fuente -->
+    <a href="index.html#inicio">☝️</a>
+    <hr>
 </body>
 </html>

@@ -14,3 +14,6 @@ Periodic table html tags
 Páginas para los iconos svg free
 - CSS icons para la descarga de iconos en formato svg u otros formatos
 - SVG repo
+
+Emogis free
+Emogipedia.org
