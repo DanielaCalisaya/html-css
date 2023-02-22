@@ -42,6 +42,7 @@
         <li><a href="index.html#lista-definicion">Listas de definición</a></li>
         <li><a href="index.html#tablas">Tablas</a></li>
         <li><a href="index.html#enlaces">Enlaces</a></li>
+        <li><a href="index.html#elementos-interactivos">Elementos interactivos</a></li>
         <li><a href="index.html#script">Script</a></li>
         <li><a href=""></a></li>
     </ul>
@@ -317,6 +318,40 @@
     cuando en la url encuentro el signo de pregunta después del send,
     indica que le puedo pasar valores,
     como por ejemplo un saludo -->
+    <hr>
+    <h2 id="elementos-interactivos">Elementos interactivos</h2>
+    <button onclick="alert('Cuidado con este botón!')">Botón</button>
+    <!-- Podemos incorporar js desde aquí pero seria una mala práctica -->
+    <br>
+    <!-- acordeon solo con html interactivo y sin js -->
+    <details>
+        <summary>Título del acordeon</summary>
+        <article>
+            <h3>Contenido</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus fuga vel hic qui ratione! Rem tenetur deserunt ipsam hic quasi laudantium, quia voluptatum mollitia eveniet incidunt, impedit odio corrupti eum.</p>
+            <img src="img/start.png" alt="Nam♥">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime quaerat quisquam earum ad similique molestiae quidem accusamus, numquam minima illo temporibus non laborum blanditiis voluptates id officiis nobis iste reiciendis!</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum dignissimos ipsam iusto ex incidunt laborum, reiciendis perferendis praesentium illum beatae ullam nemo sit recusandae, adipisci similique doloribus rerum necessitatibus harum!</p>
+        </article>
+    </details>
+    <br>
+    <details open> 
+        <!-- podemos tener un acordeon cerrado o sino abierto -->
+        <summary>Título del acordeon</summary>
+        <article>
+            <h3>Contenido</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus fuga vel hic qui ratione! Rem tenetur deserunt ipsam hic quasi laudantium, quia voluptatum mollitia eveniet incidunt, impedit odio corrupti eum.</p>
+            <img src="img/start.png" alt="Nam♥">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime quaerat quisquam earum ad similique molestiae quidem accusamus, numquam minima illo temporibus non laborum blanditiis voluptates id officiis nobis iste reiciendis!</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum dignissimos ipsam iusto ex incidunt laborum, reiciendis perferendis praesentium illum beatae ullam nemo sit recusandae, adipisci similique doloribus rerum necessitatibus harum!</p>
+        </article>
+    </details>
+    <!-- dialog - etiqueta que permite una ventana modal sin js pero todavia no tiene soporte en muchos navegadores -->
+    <dialog open=""> <!-- etiqueta experimental, no es recomendable usarla -->
+        Esta es una ventana modal en HTML
+    </dialog>
+    <br>
+    <a href="index.html#inicio">☝️</a>
     <hr>
     <h2 id="script">Script en html</h2>
     <!-- Antes de la etiqueta de cierre del body -->

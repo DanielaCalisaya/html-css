@@ -17,3 +17,6 @@ Páginas para los iconos svg free
 
 Emogis free
 Emogipedia.org
+
+Can i use - Para ver cual es el soporte en los navegadores según etiqueta
+https://caniuse.com/dialog
