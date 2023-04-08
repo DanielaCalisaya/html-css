@@ -461,6 +461,33 @@
         <option value="">pyton</option>
     </select>
     <br>
+
+    <!-- ATRIBUTOS -->
+    <h3>Ejemplo de formulario</h3>
+    <h4>Formulario de login</h4>
+    <input type="text" value="Hola" readonly disabled><br><!-- readonly de solo lectura, no me permite modificar el texto. Disabled -->
+    <input type="text" placeholder="Escribe"><br>
+    <form action="https://danielacalisaya.github.io/myPortfolio/" method="GET" autocomplete="off"><!-- autocomplete es por defecto on, osea que lo autocompletará -->
+        <!-- action, hacia donde se va a enviar. Si en la url hay signo de pregunta es que estoy mandando una variable, GET envia por la url los valores, POST lo envia en las cabezeras y oculto -->
+        <!-- https://danielacalisaya.github.io/myPortfolio/?usuario=soy+dani&password=1234 -->
+        <label for="usuario">Usuario:</label>
+        <!-- for lo que contenga se conectara con el id usuario del input. Si damos click al label el cursor se coloca en su casilla -->
+        <input 
+            type="text" 
+            name="usuario" 
+            id="usuario" 
+            placeholder="Escribe tu nombre de usuario" 
+            pattern="^[A-Za-z]+$" 
+            title="Este campo solo acepta letras"
+        ><br><!-- Expresiones reg(empieza con circunflejo y termina con signo dolar), indica que solo letras mayusculas y minusculas -->
+        <!-- name, nombre de variable que se creará, si o si lo tiene que tener. Pattern, patrón aquí ponemos una expresión regular para validar datos -->
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" placeholder="Escribe tu contraseña" required><br><!-- atributo required, requerido si o si -->
+        <input type="submit" value="Enviar"><br>
+        <input type="reset" value="Restablecer"><br>
+    </form>
+
+    <br>
     <a href="index.html">☝️</a>
     <hr>
 
