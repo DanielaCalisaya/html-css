@@ -487,6 +487,58 @@
         <input type="reset" value="Restablecer"><br>
     </form>
 
+    <h4>Select, radios y checkbox</h4>
+    <form><!-- Si no tiene el atributo action, manda los datos a la misma página -->
+        <p>Elige tu idioma</p>
+        <select name="idioma" multiple required>
+            <option value="">Elige una opcion</option>
+            <option value="es">Español</option>
+            <option value="en">Inglés</option>
+            <option value="fr">Francés</option>
+            <option value="it">Italiano</option>
+            <option value="pt" selected>Portugués</option><!-- atributo selected, carga ese elemento por defecto, solo en uno -->
+        </select>
+        <!-- http://127.0.0.1:5500/index.html?idioma=pt#formulario en la ruta estará el value-->
+        <!-- http://127.0.0.1:5500/index.html?idioma=es&idioma=en#formulario en la ruta están las dos opciones elegidas-->
+        <p>Elige tu lenguaje de programación favorito</p>
+        <input type="radio" name="lenguaje" id="radio-js" value="js"><!-- todos los radio tienen q tener el mismo name -->
+        <label for="radio-js">JavaScript</label>
+        <input type="radio" name="lenguaje" id="radio-py" value="py" checked><!-- Opcion por defecto -->
+        <label for="radio-py">Phyton</label>
+        <input type="radio" name="lenguaje" id="radio-c++" value="c++">
+        <label for="radio-c++">C++</label>
+        <p>Elige tus intereses</p>
+        <label>
+            <input type="checkbox" name="intereses" value="musica" checked><!-- No hay problema de que tengan dos atributos checked -->
+            Musica
+        </label>
+        <label>
+            <input type="checkbox" name="intereses" value="turismo" checked>
+            Turismo
+        </label>
+        <label>
+            <input type="checkbox" name="intereses" value="moda">
+            Moda
+        </label>
+        <label>
+            <input type="checkbox" name="intereses" value="comida">
+            Comida
+        </label>
+        <label>
+            <input type="checkbox" name="intereses" value="ecologia">
+            Ecologia
+        </label>
+        <!-- http://127.0.0.1:5500/index.html?idioma=pt&lenguaje=py&intereses=moda#formulario -->
+        <p>
+            <label for="">
+                <input type="checkbox" name="terminos" required><!-- aqui aplicaria required, en otros no -->
+                ¿Aceptas terminos y condiciones?
+            </label>
+        </p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Restablecer">
+    </form>
+
     <br>
     <a href="index.html">☝️</a>
     <hr>
