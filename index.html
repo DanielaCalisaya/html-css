@@ -15,6 +15,7 @@
     <!-- TITLE entre 55 y 66 carácteres. Atributos name y content: description y en content un párrafo que no pase de 165 caracteres, 
     esto nos ayudará con el seo, el título y la descripción no debe ser lo mismo -->
     <title>HTML♥</title>
+    <meta name="description" content="Aprendiendo los fundamentos de html con jon mircha">
     <!-- linkeo del css, la mejor forma -->
     <link rel="stylesheet" href="assets/style.css">
     <!-- SEO, FAVICON, COLOR -->
@@ -23,6 +24,14 @@
     <link rel="icon" href="img/logo-miCosturerito.png"><!-- para navegadores -->
     <link rel="apple-touch-icon" href="img/logo-miCosturerito.png"><!-- para telefonos -->
     <meta name="theme-color" content="#e1bcfe"><!-- se notará el cambio de color solo en versión mobile -->
+    <!--  Open Graph protocol - https://ogp.me/ -->
+    <meta property="og:title" content="HTML♥"><!-- en open graph cambia el name por property -->
+    <meta property="og:description" content="Aprendiendo los fundamentos de html con jon mircha">
+    <meta property="og:image" content="https://tudominio/img/tableperiodicahtml"><!-- no funcionará si solo ponemos la ruta interna y no el dominio -->
+    <meta property="og:url" content="https://tudominio.com/index.html"><!-- se puede o no colocar el index, sino automaticamente lo busca -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="twitter"><!-- en content escribo mi twitter -->
+    <!-- TITULO y DESCRIPCION DEBEN ser diferentes por página -->
 </head>
 
 <body> <!-- ETIQUETAS Identación!! las etiquetas tienen una jerarquia -->
