@@ -63,6 +63,7 @@
         <li><a href="index.html#formulario">Formularios</a></li>
         <li><a href="index.html#dataAttributes">Data Attributes</a></li>
         <li><a href="index.html#metaEtiquetas">Meta etiquetas para SEO</a></li>
+        <li><a href="index.html#accesibilidadWeb">Accesibilidad Web</a></li>
         <li><a href="index.html#script">Script</a></li>
         <li><a href=""></a></li>
     </ul>
@@ -579,6 +580,30 @@
     <!-- Importantes para su posicionamiento -->
     <br>
 
+    <a href="index.html">☝️</a>
+    <hr>
+    
+    <h2 id="accesibilidadWeb">Accesibilidad Web</h2>
+    <h3 role="title">Las estaciones del año</h3><!-- ¿qué rol tiene el h3? -->
+    <!-- https://web.dev/accessible/
+         https://html5accessibility.com/
+         https://www.w3.org/blog/news/archives 
+         https://www.youtube.com/channel/UCU6ljj3m1fglIPjSjs2DpRA/videos/videos
+    -->
+    <!-- atributos -->
+    <ul role="list">
+        <!-- cuando el lector de pantalla le lea a la persona con alguna discapacidad le dirá, se encuentra una lista con sus items -->
+        <!-- role y me sugiere que es una lista -->
+        <li tabindex="1" role="listitem">Primavera</li>
+        <li tabindex="3" role="listitem">Verano</li>
+        <li tabindex="2" role="listitem">Otoño</li>
+        <li tabindex="4" role="listitem">Invierno</li>
+        <!-- tabindex: suponiendo que nos quedamos sin mousse, con el tabulador podemos referirnos a algún elemento,
+        pero el texto puede que no lo tome, en cambio si usamos esta propiedad si lo tomará, lo marcará-->
+    </ul>
+    <a role="link" aria-label="Encontrarás más info sobre las estaciones" href="#" target="_blank">Más información</a>
+    <br>
+    <!-- en el link anterior le indicamos que rol tiene y la descripcion en el atributo aria-label -->
     <a href="index.html">☝️</a>
     <hr>
 
