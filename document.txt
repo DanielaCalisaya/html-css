@@ -1,3 +1,5 @@
+DOCUMENT 1° VIDEO
+
 emmet
 https://www.emmet.io/
 Permitirá escribir código html de manera más ágil -> ! | div#id (atajos)
@@ -21,3 +23,17 @@ Emogipedia.org
 
 Can i use - Para ver cual es el soporte en los navegadores según etiqueta
 https://caniuse.com/dialog
+
+DOCUMENT 2° VIDEO
+
+Css MDN
+https://developer.mozilla.org/es/docs/Web/CSS
+
+Css - Reference
+https://cssreference.io/
+
+Css - Can i use Permite ver el soporte de las reglas de css
+https://caniuse.com/
+
+Guía ortográfica - Buenas prácticas para escribir HTML y CSS
+https://codeguide.co/
