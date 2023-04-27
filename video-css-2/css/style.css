@@ -1,0 +1,16 @@
+/* Regla CSS consta de 2 partes
+
+1- Selector: es el bloque html al que nosotros podemos aplicarle esos estilos 
+2- Bloque de declaraciones: {   -> cada uno de los atributos que vamos a modificar 
+    atributo: valor;
+    atributo-de-mas-de-dos-palabras: otro-valor  ->así lo escribiríamos
+}
+*/
+
+/* h1 {
+    color: aqua;
+    background-color: skyblue;
+} */
+
+/* Son mala práctica porque son bloqueantes a la hora de que el navegador lea esta instrucción */
+@import url("otra-hoja.css");
