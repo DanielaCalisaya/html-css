@@ -50,3 +50,12 @@ p { /* toma todos los párrafos que encuentra */
 .text-white {
     color: white;
 }
+
+/* hijos directos, aplican a los de primer nivel, b seria nieta no hija directa */
+.hijos-directos > li {  
+    background-color: thistle;
+}
+
+.hijos-descendientes b {
+    background-color: thistle;
+}
