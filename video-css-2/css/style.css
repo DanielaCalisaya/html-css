@@ -14,3 +14,39 @@
 
 /* Son mala práctica porque son bloqueantes a la hora de que el navegador lea esta instrucción */
 @import url("otra-hoja.css");
+
+/* 3 selectores básicos:
+1- Etiquetas : elementos html
+2- Identificadores : atributo id #
+3- Clases : atributo class . 
+*/
+
+p { /* toma todos los párrafos que encuentra */
+    background-color: blue;
+}
+
+/* dar estilos con id es una mala práctica, además que tienen un mayor peso */
+#parrafo-dos {
+    background-color: blueviolet;
+}
+
+/* maquetar y diseñar con clases, son reutilizables, que hagan referencia a lo que corresponde */
+.bg-skyblue {
+    background-color: skyblue;
+}
+
+.bg-steelblue {
+    background-color: steelblue;
+}
+
+.text-20 {
+    font-size: 20px;
+}
+
+.text-32 {
+    font-size: 32px;
+}
+
+.text-white {
+    color: white;
+}
