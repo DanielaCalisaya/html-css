@@ -59,3 +59,13 @@ p { /* toma todos los párrafos que encuentra */
 .hijos-descendientes b {
     background-color: thistle;
 }
+
+/* van a aplicar a los selectores que son hermanos(a todos pero los que están debajo), a los que estén por debajo del elemento de referencia */
+.hermanos-general ~ li { /* para la tilde alt gr + la tecla que lo contiene */
+    background-color: thistle;
+}
+
+/* le aplica el estilo al que sigue , en este caso a otoño, no a verano */
+.hermanos-adyacentes + li {
+    background-color: thistle;
+}
