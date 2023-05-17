@@ -69,3 +69,33 @@ p { /* toma todos los párrafos que encuentra */
 .hermanos-adyacentes + li {
     background-color: thistle;
 }
+
+/* selectores de atributo, nos van a permitir  */
+.selectores-atributos a[href] { /* seleccionando por atributo, todos los que tengan href aplicará */
+    color: olivedrab;
+}
+
+.selectores-atributos a[target="_black"] {
+    font-weight: bold;
+}
+
+.selectores-atributos a[href*="jonmircha"] { /* el comodin del * aplica el estilo si tiene el texto en cuestion en cualquier parte */
+    font-size: 24px;
+}
+
+.selectores-atributos a[href^="http"] { /* el comodin del ^ aplica el estilo si contiene el texto en cuestion al principio */
+    text-decoration: none;  /* alt gr + la tecla del ^(circunflejo: presionando dos veces) */
+}
+
+.selectores-atributos a[href$=".com"] { /* el comodin del $ aplica el estilo si contiene el texto en cuestion al final */
+    background-color: yellow; 
+}
+
+.selectores-atributos a [class~="cursos"] { /* el comodin del ~ aplica el estilo si contiene el texto en cuestion en una lista separada por espacios, (clases) */
+    background-color: rgb(87, 205, 238);  /* <- no funciona */
+}
+
+.selectores-atributos a [class|="menu"] { /* el comodin del | aplica el estilo si contiene el texto en cuestion en una lista separada por espacios y que despues de ese texto venga un guión medio */
+    font-style: italic;
+}
+
