@@ -99,3 +99,16 @@ p { /* toma todos los párrafos que encuentra */
     font-style: italic;
 }
 
+/* Selector universal, aplicará a todos los elementos del html */
+* {
+    font-family: sans-serif;
+}
+
+.selector-universal * { /* dentro de la clase elige a todos los que estan dentro */
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+
+
+
+
