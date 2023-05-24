@@ -22,7 +22,7 @@
 */
 
 p { /* toma todos los párrafos que encuentra */
-    background-color: blue;
+    background-color: steelblue;
 }
 
 /* dar estilos con id es una mala práctica, además que tienen un mayor peso */
@@ -108,7 +108,44 @@ p { /* toma todos los párrafos que encuentra */
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
 }
 
+/* 
+Pseudo-clases - Dan estilo dependiendo el contexto, la posicion o estado del elemento 
+https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-classes
+*/
+.form-pseudoclases *:required { /* segun el estado, osea debe ser el q está requerido y empiezan con dos puntos las pseudoclases */
+    border-color: skyblue;
+}
 
+.form-pseudoclases *:valid {
+    border-color: green;
+}
 
+.form-pseudoclases *:invalid { /* en el caso de email, espera un arroba, si no hay nada escrito, o no hay un arroba estará rojo */
+    border-color: red;
+}
 
+.form-pseudoclases *:focus {
+    border-color: blue;
+}
 
+.form-pseudoclases *:disabled {
+    border-color: pink;
+}
+
+.menu-pseudoclases a:visited { /* esta clase tiene que ir arriba para que no inhabilite el estado hover */
+    /* para los enlaces que son visitados */
+    color: olive;
+}
+
+.menu-pseudoclases a:hover {
+    /* aplica para cualquier elemento */
+    color: orange;
+}
+
+.p-pseudoclases:hover {
+    font-size: 30px;
+}
+
+#temario-css:target { /* cuando tenga en la url el target activo */
+    background-color: lightpink;
+}
