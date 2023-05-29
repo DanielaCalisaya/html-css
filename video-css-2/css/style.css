@@ -21,9 +21,9 @@
 3- Clases : atributo class . 
 */
 
-p { /* toma todos los párrafos que encuentra */
+/*p {  toma todos los párrafos que encuentra 
     background-color: steelblue;
-}
+}*/
 
 /* dar estilos con id es una mala práctica, además que tienen un mayor peso */
 #parrafo-dos {
@@ -148,4 +148,54 @@ https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-classes
 
 #temario-css:target { /* cuando tenga en la url el target activo */
     background-color: lightpink;
+}
+
+.lista-pseudoclases li:first-child { /* tenemos 12 li, pero se selecciona al primer hijo */
+    color: aqua;
+}
+
+.lista-pseudoclases li:last-child { /* selecciona al ultimo hijo */
+    color: violet;
+}
+
+/* nth */
+.lista-pseudoclases li:nth-child(3) { /* cambia el tercer elemento */
+    color: navy;
+}
+
+.lista-pseudoclases li:nth-child(4n) { /* de 4 en 4 aplica tal estilo */
+    font-size: 25px;
+}
+
+.lista-pseudoclases li:nth-child(3n + 1) { /* de 3 en 3 aplica tal estilo mas 1 */
+    font-weight: bold;
+}
+
+
+.lista-pseudoclases li:nth-child(even) { /* even: pares */
+    background-color: lightpink;
+}
+
+.lista-pseudoclases li:nth-child(odd) { /* odd: impares */
+    background-color: lightskyblue;
+}
+
+.articulo-pseudoclases p:first-child { /* no toma al primer parrafo, porque el primer hijo es header */
+    background-color: brown;
+}
+
+.articulo-pseudoclases p:first-of-type { /* toma el primero en su tipo */
+    background-color: brown;
+}
+
+.articulo-pseudoclases p:last-of-type { /* toma el ultimo en su tipo */
+    background-color: brown;
+}
+
+.articulo-pseudoclases p:nth-of-type(3) { /* toma el tercero en este caso */
+    background-color: fuchsia;
+}
+
+.articulo-pseudoclases *:not(p, .boton ) { /* negacion: afectan a todos, menos los párrafos y por ejemplo alguna con clase también */
+    background-color: beige;
 }
