@@ -199,3 +199,46 @@ https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-classes
 .articulo-pseudoclases *:not(p, .boton ) { /* negacion: afectan a todos, menos los párrafos y por ejemplo alguna con clase también */
     background-color: beige;
 }
+
+/* pseudoelementos - dan estilos a partes especificas de un elemento,
+se usa el :: para diferenciarlos de las pseudoclases
+(la buena practica es con dos dos puntos, los navegadores modernos aceptan con uno solo)
+https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-elements
+*/
+
+/* after y before */
+.tela-clase::before { /* antes... siempre en after y before es necesario agregarle el content */
+    content: "✂";
+}
+
+.tela-clase::after { /* después...  */
+    content: "❤";
+}
+
+.precio::before { 
+    content: "$";
+    font-weight: bold;
+}
+
+.precio::after { 
+    content: " Pesos";
+    font-weight: bold;
+}
+
+.p-pseudoelementos::first-letter {
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.p-pseudoelementos::first-line {
+    background-color: lightblue;
+}
+
+.p-pseudoelementos::selection {
+    color: yellow;
+    background-color: black;
+}
+
+.input-pseudoelementos::placeholder { /* estamos seleccionando un atributo y a ese lo modificamos */
+    color: darkslateblue;
+}
