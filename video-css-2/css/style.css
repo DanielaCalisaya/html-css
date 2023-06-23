@@ -255,3 +255,21 @@ https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-elements
     display: block; /* cada uno de los elementos en una linea diferente */
     width: 300px;
 }
+
+/* 
+Algoritmo de css, a veces se sobreescriben las reglas css 
+- cascada
+- especificidad
+- herencia
+
+La cascada es el mecanismo en que el navegador aplica los estilos. 
+Y toma en cuenta lo siguiente en este orden:
+1) El origen del código: 
+-El user Agent(los estilos por defecto del navegador)
+-Personalizaciones del usuario
+-Los estilos del autor
+2) La especificidad del selector
+3) Orden de aparicion
+*/
+
+
