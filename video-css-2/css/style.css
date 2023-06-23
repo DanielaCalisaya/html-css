@@ -272,4 +272,23 @@ Y toma en cuenta lo siguiente en este orden:
 3) Orden de aparicion
 */
 
+/* Especificidad: 
+Cada selector que seleccionamos para dar estilo tiene un peso, tiene especifisidad(colocarnos sobre) 
+por eso no se debe usar id, elevan el peso, sino clases
 
+La especificidad es el peso que tiene un selector cuando hay conflicto de estilos.
+Asi se calcula:
+Etiquetas y pseudoelementos-------------0,0,0,1
+Clases, atributos y pseudoclases--------0,0,1,0
+Identificadores-------------------------0,1,0,0
+Estilos en línea------------------------1,0,0,0
+Import----------------------------------rompe la especificidad
+
+Por ejemplo wordpres abusan de la especificidad:
+section nav ul li a {
+
+    }   -> esto tiene mucho peso, 
+           se considera una mala práctica, USAR clases,
+           que no rebasen los dos
+
+*/
