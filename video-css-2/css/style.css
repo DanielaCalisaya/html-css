@@ -291,6 +291,11 @@ section nav ul li a {
            se considera una mala práctica, USAR clases,
            que no rebasen los dos
 
+La Herencia, es la capacidad de un selector de obtener(heredar) los valores de sus ancestros más cercanos,
+para aplicarla se usa el valor inherit, si queremos evitarla
+podemos asignar otro valor o inicializar la propiedad en cuestión con el valor initial
+Propiedades heredables -> link
+https://web.dev/learn/css/inheritance/#which-properties-are-inheritable
 */
 
 /* Práctica */
@@ -324,4 +329,14 @@ blockquote#cita-marco {
 
 .cita-marco { /* quedará el ultimo important, es por cascada */
     background-color: moccasin !important; 
+    font-size: 32px; /* la etiqueta cite tamb lo hereda */
+    border-style: dotted;
+    border-color: blue;
 }
+/* --- */
+
+.cita-marco cite {
+    background-color: brown; /* cambio el color */
+    background-color: inherit; /* o si quiero que lo herede */
+}
+/* la tipografía si se hereda */
