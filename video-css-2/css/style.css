@@ -292,3 +292,36 @@ section nav ul li a {
            que no rebasen los dos
 
 */
+
+/* Práctica */
+blockquote#cita-marco.cita-marco { /* peso 111 */
+    background-color: lightslategray;
+}
+
+blockquote { /* aplicará a todas estas etiquetas que alla */
+    background-color: burlywood;
+}
+
+#cita-marco {
+    background-color: lightgreen;/* peso:100 */
+}
+
+blockquote.cita-marco { /* el ser tan especificos seria una mala práctica porque aumentamos su peso y su especificidad */
+    background-color: tomato;
+}
+
+.cita-marco { /* por cascada y por especificidad será azul */
+    background-color: cornflowerblue;
+}
+
+.cita-marco {
+    background-color: mediumaquamarine !important; /* rompo la especificidad y la cascada pero es mala práctica */
+}
+
+blockquote#cita-marco {
+    background-color: lightseagreen;
+}
+
+.cita-marco { /* quedará el ultimo important, es por cascada */
+    background-color: moccasin !important; 
+}
