@@ -340,3 +340,14 @@ blockquote#cita-marco {
     background-color: inherit; /* o si quiero que lo herede */
 }
 /* la tipografía si se hereda */
+
+/* 
+Prefijos de los navegadores
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+
+https://caniuse.com/
+https://autoprefixer.github.io/
+*/
