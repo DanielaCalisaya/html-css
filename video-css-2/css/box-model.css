@@ -1,4 +1,12 @@
 h1 {
-    border-width: 3px;
-    border-style: solid;
+    width: 400px;
+    height: 200px;
+    /* estas propiedades son shorthand */
+    border-color: cornflowerblue;
+    border-top-color: blue;
+    border-width: 10px; /* thin delgado 1 px, medium 3px, thick 5px */
+    border-style: dotted;
+    /* border: 2px dashed blue  -> puedo sintetizar asi */
 }
+
+/* https://cssreference.io/ */
