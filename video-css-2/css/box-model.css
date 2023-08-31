@@ -69,10 +69,29 @@ h1 {
 
 .caja-bloque {
     margin: 32px;
+    display: block;
 }
 
 .caja-linea {
     margin: 32px;
+    display: inline;
+}
+
+.caja-none,
+.caja-linea-bloque {
+    background-color: darkgoldenrod;
+    color: aliceblue;
+    width: 600px;
+    height: 300px;
+    border: medium solid black;
+}
+
+.caja-linea-bloque {
+    display: inline-block;
+}
+
+.caja-none {
+    display: none;
 }
 
 /* https://cssreference.io/ */
