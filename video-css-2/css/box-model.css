@@ -78,7 +78,8 @@ h1 {
 }
 
 .caja-none,
-.caja-linea-bloque {
+.caja-linea-bloque,
+.caja-hidden {
     background-color: darkgoldenrod;
     color: aliceblue;
     width: 600px;
@@ -93,5 +94,12 @@ h1 {
 .caja-none {
     display: none;
 }
+
+.caja-hidden {
+    visibility: hidden /* valor por defecto: visible */
+} 
+/* con visibility conserva el lugar pero no se ve
+en cambio con display no conserva el lugar y tampoco se ve. */
+
 
 /* https://cssreference.io/ */
