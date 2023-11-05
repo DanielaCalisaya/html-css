@@ -101,5 +101,14 @@ h1 {
 /* con visibility conserva el lugar pero no se ve
 en cambio con display no conserva el lugar y tampoco se ve. */
 
+.overflow {
+    background-color: darkseagreen;
+    width: 200px;
+    height: 100px;
+    overflow: hidden; /* oculta lo que se desborda */
+    overflow: scroll; /* lo que desborda se seguirá viendo pero el usuario puede hacer scroll */
+    overflow: auto; /* scroll donde lo necesita, solo en el alto */
+    overflow-y: scroll; /* scroll solo en y, osea en vertical */
+}
 
 /* https://cssreference.io/ */
