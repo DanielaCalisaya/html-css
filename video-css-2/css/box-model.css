@@ -111,4 +111,47 @@ en cambio con display no conserva el lugar y tampoco se ve. */
     overflow-y: scroll; /* scroll solo en y, osea en vertical */
 }
 
+/* tamaño de caja */
+.box-sizing-content,
+.box-sizing-border {
+    background-color: orange;
+    box-sizing: content-box;
+    width: 500px;
+    height: 250px;
+    padding: 10px;
+    border: thick solid black;
+    /* w500 + 10 + 10 = 520 por eso cuando inspeccionamos salen mas grandes las medidas */ 
+    /* h250 + 10 + 10 = 270 */
+}
+
+.box-sizing-border {
+    box-sizing: border-box; /* todo aplicara desde el borde */
+}
+
+.container-col-3 {
+    background:lawngreen;
+    margin-top: 20px;
+    width: 600px;
+    height: 300px;
+}
+
+.container-col-3 > * {
+    box-sizing: border-box; 
+    width: 200px;
+    float: left; /* flota los 3 elementos a la izquierda */
+    border: thin solid red;
+    /* estas secciones deberian entrar en la caja mas grande de 600 de ancho, porque cada una mide 200 de ancho,
+    pero no, el borde rojo ocupa lugar, por eso lo mejor es bx-sizing: border-box */
+}
+/* https://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+/* para no aplicar esta propiedad en cada caja, se podria formatear desde un principio asi */
+html {
+    box-sizing: border-box; /* aplica al nodo principal y a todos por herencia */
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
 /* https://cssreference.io/ */
