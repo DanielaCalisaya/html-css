@@ -154,4 +154,25 @@ html {
     box-sizing: inherit;
 }
 
+/* Float */
+.container-floats {
+    background-color: darkslateblue;
+}
+
+.float-right {
+    float: right;
+}
+
+.float-left {
+    float: left;
+}
+
+.clear-fix {
+    clear: both; /* limpia el elemento flotante, 
+    antes se usaba para arreglar los problemas de maquetación,
+    es una muy mala práctica, incluido dejar una etiqueta vacia */
+}
+
+
+
 /* https://cssreference.io/ */

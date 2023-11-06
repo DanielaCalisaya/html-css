@@ -17,7 +17,7 @@
             <li><a href="box-model.html#visibility">Visibility</a></li>
             <li><a href="box-model.html#overflow">Propiedad Overflow</a></li>
             <li><a href="box-model.html#tamanio-caja">Tamaño de caja</a></li>
-            <li><a href="box-model.html"></a></li>
+            <li><a href="box-model.html#float-clear">Propiedad Float & Clear</a></li>
             <li><a href="box-model.html"></a></li>
         </ul>
     <!-- https://developer.mozilla.org/es/docs/Learn/CSS/Building_blocks/The_box_model -->
@@ -154,8 +154,31 @@
     <a href="box-model.html#temario">☝️</a>
     <hr>
 
-    <h2 id=""></h2>
+    <h2 id="float-clear">Propiedad Float & Clear</h2>
+    <!-- Float flotar hacia la izquierda o derecha, busca el lugar más cercano hacia sus lados,
+    ahora se considera una mala práctica, como los elementos flotan hay un problema de superposición con los demás elementos que no flotan -->
 
+    <article class="container-floats">
+        <section class="float-right">Flota a la derecha</section>
+        <!-- <section class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Porro labore, odit expedita dolores corporis magni voluptatum architecto. 
+            Ab voluptatibus numquam temporibus recusandae neque, 
+            perferendis voluptatum suscipit animi voluptate eveniet fugit?
+        </section> -->
+        <section class="float-left">Flota a la izquierda</section>
+    </article>
+    <div class="clear-fix"></div> <!-- arreglaria el problema de maquetación -->
+    <article>
+        <section class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Porro labore, odit expedita dolores corporis magni voluptatum architecto. 
+            Ab voluptatibus numquam temporibus recusandae neque, 
+            perferendis voluptatum suscipit animi voluptate eveniet fugit?
+        </section>
+    </article>
+    <!-- https://960.gs/ -->
+
+    <a href="box-model.html#temario">☝️</a>
+    <hr>
 
 
 </body>
