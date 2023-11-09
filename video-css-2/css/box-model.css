@@ -191,4 +191,17 @@ html {
     margin-left: 16px;
 }
 
+/* Centrado de cajas */
+.sitio-web {
+    border: thin solid black;
+    background-color: thistle; 
+    width: 800px;
+    height: 1000px;
+    padding: 16px;
+    /*text-align: center;  -> no centra la caja, sino el contenido de la caja */
+    margin-left: auto; /* ajustalo automáticamente */
+    margin-right: auto;
+    /* margin: 0 auto; Esto puede afectar si necesitamos que algun elemento tenga margen arriba o abajo*/
+}
+
 /* https://cssreference.io/ */
