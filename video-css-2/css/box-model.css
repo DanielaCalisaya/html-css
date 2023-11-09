@@ -173,6 +173,15 @@ html {
     es una muy mala práctica, incluido dejar una etiqueta vacia */
 }
 
+/* Colapso de márgenes verticales */
+.margin-collapse {
+    background-color:darkmagenta;
+}
 
+.margin-collapse section {
+    border: thin solid black;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
 
 /* https://cssreference.io/ */
