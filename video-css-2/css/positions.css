@@ -33,3 +33,7 @@ Las propiedades top y left van a tener preferencia por sobre bottom y right resp
 Estas 5 propiedades no funcionan con el valor de static
 
 */
+.static {
+    background-color: aquamarine;
+    position: static; /* es el posicionamiento que tiene por defecto, no se moverá */
+}
