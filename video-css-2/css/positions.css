@@ -37,3 +37,12 @@ Estas 5 propiedades no funcionan con el valor de static
     background-color: aquamarine;
     position: static; /* es el posicionamiento que tiene por defecto, no se moverá */
 }
+
+.relative {
+    background-color: cadetblue;
+    position: relative; /* no pierde sus dimenciones */
+    left: 50px; /* de la posición original, se alejan de acuerdo a su margen */
+    top: -20px; /* al ser negativo ahi si sube */
+    width: 400px;
+    top: 30px; /* se sobreescribe por cascada */
+}
