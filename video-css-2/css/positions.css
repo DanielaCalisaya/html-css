@@ -81,3 +81,20 @@ se mueve respecto del documento HTML
    /*  top: 0; */
 }
 
+/* Posicionamiento fijo
+El elemento pierde sus dimenciones y posición original en el
+flujo del documento. Si se mueve toma como referencia el documento 
+HTML, y queda fijo en la posición, cuando el scroll se mueva,
+el elemento no lo hará, quedará fijo.
+*/
+
+.fixed {
+    background-color: darkolivegreen;
+    position: fixed; 
+    width: 300px;
+    height: 100px;
+    right: 50px; 
+    bottom: 40px;
+    top: 30px;
+    left: 400px;
+}
