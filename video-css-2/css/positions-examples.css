@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    /* padding-top: 50px; */ /* solo con esto el resto del cuerpo baja y logramos acomodar el header */
+}
+
+.header {
+    background-color: blanchedalmond;
+    width: 100%;
+    height: 50px;
+}
+
+.fixed-top {
+    position: fixed;
+    top: 0;
+}
+
+.sticky-top {
+    position: sticky;
+    top: 0;
+}
+
+.hero-image {
+    background-color: aquamarine;
+    width: 100%;
+    height: 100vh;
+} /* cuando hagamos scroll la cabecera queda fija */
