@@ -45,3 +45,21 @@ body {
     margin-top: 0; /* el h3 de por si ya tiene un margin */
     margin-bottom: 0;
 }
+
+/* example: modal */
+.modal-window {
+    background-color: black;
+    color: white;
+    /* position: absolute; si ponemos absolute se posicionará solo al principio de todo */
+    position: fixed; /* cubrirá todo */
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.5;
+    display: none;
+}
+
+.modal-window:target {
+    display: block;
+}
