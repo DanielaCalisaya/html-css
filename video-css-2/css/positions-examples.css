@@ -63,3 +63,13 @@ body {
 .modal-window:target {
     display: block;
 }
+
+/* márgenes negativos */
+.box {
+    background-color: blue;
+    color: white;
+    padding: 20px;
+    margin-top: -30px; /* con esto los margenes se deslizan */
+    margin-left: -30px;
+    padding-left: -30px; /* al inspeccionar, no lo permite en el padding, valor inválido */
+}
