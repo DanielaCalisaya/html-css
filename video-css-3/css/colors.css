@@ -52,3 +52,33 @@ Por cada canal de color tenemos valores que van del 0 al 255
     color: rgb(82, 82, 224);
     border: thick solid black;
 }
+
+/* Sistema HSL 
+HueSaturationLightness(Tono Saturación Luminosidad)
+El primer valor es el Hue, el tono(circulo cromático)
+0° -> red
+60° -> yellow
+120° -> green
+180° -> cyan
+240° -> blue
+300° -> magenta
+
+El segundo valor es la Saturation(Intensidad del color)
+0% -> Escala de grises
+100% -> El color puro 
+
+El tercer valor es Lightness(liminosidad del color)
+0% -> negro
+50% -> es el color puro
+100% -> blanco
+*/
+.color-hsl {
+    background-color: hsl(0, 100%, 50%);
+    background-color: hsl(120, 100%, 50%);
+    background-color: hsl(240, 100%, 50%);
+    background-color: hsl(30, 100%, 50%, 0.5); /* con el último parámetro le agrego opacidad */
+    background-color: hsl(30, 100%, 50%, 0.75);
+    color: hsl(0, 0%, 100%);
+    color: hsl(0, 0%, 0%);
+    border: thick solid hsl(240, 75%, 65%);
+}
