@@ -1,0 +1,38 @@
+.color-by-name {
+    background-color: coral;
+    color: rebeccapurple;
+    border: thick solid black;
+}
+/* La página me puede ayudar a convertir el color que quiero
+a otros valores que necesite
+CMYK valor de color para imprimir, entonces el color
+que hay en el softwer es el mismo que se imprimirá.
+Microsoft utiliza rgb pero puede que al imprimir no sea exacto
+rgb to hex 
+*/
+
+/* sistema hexadecimal
+Tiene 16 digitos 0123456789ABCDEF
+RGB (Medios digitales) - red green blue
+vs 
+CMYK (Medios impresos) - cyan magenta yellow key
+Colores en HEX va a ser colores de 6 dígitos:
+#FF6600(ff representa el canal del color red, 66 representa
+el color del canal green, y el 00 representa el canal del color blue)
+*/
+
+.color-hex {
+    background-color: #FF6600; /* No ocaciona problemas el que sea mayuscula o minuscula, pero es buena práctica en minuscula */
+    background-color: #f60; /* cuando son iguales las parejas de digitos se puede simplificar */
+    background-color: #ff6605; /* es otra variante aunque sea poquito */
+    background-color: #00000050;
+    color: rebeccapurple;
+    border: thick solid #ffffff;
+    border: thick solid #000000;
+    border: thick solid #ff0000;/* podemos simplificar */
+    border: thick solid #00ff00;
+    border: thick solid #0000ff;
+}
+/* La apertura de colores puede ser desde 000000
+hasta ffffff, es decir negro hasta rojo, esos colores
+al 100% */
