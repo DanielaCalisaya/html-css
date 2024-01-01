@@ -36,3 +36,19 @@ el color del canal green, y el 00 representa el canal del color blue)
 /* La apertura de colores puede ser desde 000000
 hasta ffffff, es decir negro hasta rojo, esos colores
 al 100% */
+
+/* Sistema rgb 
+Acepta 8 bits por canal
+Bit (0/1) 2 elevado a la potencia 8 = 2*2*2*2*2*2*2*2=256
+Por cada canal de color tenemos valores que van del 0 al 255
+*/
+.color-rgb {
+    background-color: rgb(255, 255, 255); /* valores de 0 a 255 */
+    background-color: rgb(255, 0, 0);
+    background-color: rgb(0, 255, 0);
+    background-color: rgb(0, 0, 255);
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.5);/* opacidad: canal Alfa, de 0 a 1 */
+    color: rgb(82, 82, 224);
+    border: thick solid black;
+}
