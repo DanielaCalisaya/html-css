@@ -97,3 +97,28 @@ definida esta propiedad, busca del ancestro más cercano al más alejado
     color: olive;
     border: thick solid currentColor;
 }
+
+.opacity { /* aplica a todas las propiedades */
+    background-color: orchid;
+    color: navy;
+    border: thick solid black;
+    opacity: 0.5; /* del 0 al 1 */
+    opacity: 1;
+    opacity: 0.75;
+}
+
+.opacity-0 {
+    opacity: 0;
+}
+
+.opacity-10 {
+    opacity: .1;
+}
+
+.opacity-20 {
+    opacity: 0.2;
+}
+
+.opacity-30 {
+    opacity: 0.3;
+}
