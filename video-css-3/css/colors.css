@@ -82,3 +82,18 @@ El tercer valor es Lightness(liminosidad del color)
     color: hsl(0, 0%, 0%);
     border: thick solid hsl(240, 75%, 65%);
 }
+
+/* Valor transparent:
+color transparent es igual a aplicar rgb(0,0,0,0)
+Valor currentColor: hereda el color por defecto o  
+asignado de la propiedad color, del ancestro que tenga 
+definida esta propiedad, busca del ancestro más cercano al más alejado
+(cm el div no tiene color, busca al body, que tiene de color el texto negro)
+*/
+.color-transparent-current { /* suponiendo que en movil este el color y en tablet o pc, ya no queremos el color */
+    background-color: aquamarine;
+    background-color: currentColor;
+    background-color: transparent; 
+    color: olive;
+    border: thick solid currentColor;
+}
