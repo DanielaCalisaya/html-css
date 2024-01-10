@@ -91,3 +91,12 @@ toma como referencia el html */
   margin: 0.5ex;
   padding: 2ex;
 }
+
+/* 1 ch ocupa un caracter, 
+entonces nos aseguramos que tenga tantos caracteres,
+puede ser útil para formularios o cuando necesitamos que ocupe determinado ancho(columnas en el periodico) */
+.chs { 
+  background-color: rebeccapurple;
+  color: white;
+  width: 10ch; /* cubre solo 10 caracteres */
+}
