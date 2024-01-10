@@ -39,3 +39,20 @@ html {
   font-size: 30px;
   border: thick solid blue; /* thick 5 px */
 }
+
+.ems { /* 1 em es igual a 16px */
+  background-color: cadetblue;
+  font-size: 24px;
+  padding: 1em .5em;
+  border: thick solid rebeccapurple; 
+}
+
+.em-child {
+  background-color: royalblue;
+  border: thick solid beige;
+  font-size: 2em; /* queda muy grande la letra porque la base tiene 24px */
+  /* entonces si usamos em tenemos que tener en cuenta que fuente 
+  tiene el contenedor padre, y sino solo usarlo en el contenedor padre */
+  margin: .5em;
+  padding: 1rem;
+}
