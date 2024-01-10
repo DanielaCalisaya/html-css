@@ -75,3 +75,19 @@ toma como referencia el html */
   padding: 1rem;
   font-size: 2rem;
 }
+
+.exs { /* los ems están basados en la anchura de las m,
+  y los exs en la altura de las x */
+  background-color: cadetblue;
+  font-size: 24px;
+  padding: 1ex 0.5ex;
+  border: thick solid rebeccapurple; 
+}
+
+.ex-child {
+  background-color: rgb(197, 226, 93);
+  border: thick solid blue;
+  font-size: 2em;
+  margin: 0.5ex;
+  padding: 2ex;
+}
