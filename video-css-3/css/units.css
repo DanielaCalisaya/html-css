@@ -7,7 +7,7 @@ Unidades de Medida
   2) Relativas (Su valor es relativo a un contexto)
     em, rem, ex, ch - al tamaño de la fuente
       em - basada en la anchura de la "m" de la fuente del elemento
-      rem -  basada en la anchura de la "m" de la fuente del elemento raíz (html)
+      rem(rootem) -  basada en la anchura de la "m" de la fuente del elemento raíz (html)
       ex - basada en la altura de la "x" de la fuente del elemento
       ch - basada en la anchura del "0" de la fuente del elemento
     % - al tamaño del contenedor
@@ -23,6 +23,8 @@ Unidades de Medida
 /* receteo básico del tamaño de caja-- */
 html {
   box-sizing: border-box;
+  /* font-size: 20px; */
+  font-size: 16px;  /* por defecto */
 }
 *,
 *::after,
@@ -54,5 +56,22 @@ html {
   /* entonces si usamos em tenemos que tener en cuenta que fuente 
   tiene el contenedor padre, y sino solo usarlo en el contenedor padre */
   margin: .5em;
+  padding: 1em;
+}
+
+/* Rems: con elemento hijo no pasa como con los ems,
+toma como referencia el html */
+.rems { 
+  background-color: cadetblue;
+  font-size: 24px;
+  padding: 1rem 0.5rem;
+  border: 5px solid pink; 
+}
+
+.rem-child {
+  background-color: rgb(219, 63, 206);
+  border: thick solid black;
+  margin: 0.5rem;
   padding: 1rem;
+  font-size: 2rem;
 }
