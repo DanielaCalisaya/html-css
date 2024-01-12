@@ -100,3 +100,29 @@ puede ser útil para formularios o cuando necesitamos que ocupe determinado anch
   color: white;
   width: 10ch; /* cubre solo 10 caracteres */
 }
+
+.porcentages {
+  background-color: rgb(255, 0, 93);
+  color: white;
+  width: 80%; /* del total el 80% */
+  font-size: 100%; /* de su tamaño de fuente, en este caso del html */
+  padding: 5%; /* 5% del contenedor padre */
+  margin: 10% 5%; 
+  height: 100%; /* ignora la altura, xq será definida por el contenido */
+  /* en la maquetación estará limitada la altura debido al contenido que haya,
+  el body irá creciendo conforme crezca el contenido */
+}
+
+.height-parent {
+  background-color: brown;
+  width: 500px;
+  height: 500px;
+}
+
+.height-child {
+  background-color:darkgray;
+  width: 50%;
+  height: 50%;
+}
+/* entonces tiene que tener un contenedor padre bien definido,
+ahí si tomara el porcentaje referido al padre */
