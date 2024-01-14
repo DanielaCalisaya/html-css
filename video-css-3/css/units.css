@@ -31,6 +31,9 @@ html {
 *::before {
   box-sizing: inherit;
 }
+body {
+  /* margin: 0; */
+}
 /* -- */
 
 .pixels {
@@ -126,3 +129,24 @@ puede ser útil para formularios o cuando necesitamos que ocupe determinado anch
 }
 /* entonces tiene que tener un contenedor padre bien definido,
 ahí si tomara el porcentaje referido al padre */
+
+.viewport {
+  background-color: darkcyan;
+  width: 50vw; /* siempre ocupara el 50% */
+  width: 100vw; /* % */
+  height: 50vh; /* no importa que altura total tenga, será la mitad */
+  /* width 100vw -> me genera una barra de desplazamiento horizontal,
+  es porque el body tiene margenes por defecto,
+  para que no pase esto, le sacamos al body los márgenes,
+  y la barra de scroll tambien forman parte del viewport,
+  si uso %, no tendré problemas, se basa en el tamaño del contenedor */
+  font-size: 5vw; /* las letras se haran mas chicas o grandes dependiendo del tamaño de pantalla */
+  padding: 2vh 2vw;
+}
+
+.vmin, .vmax {
+  background-color: darkkhaki;
+  border: thick solid cyan;
+  width: 50vmax;
+  height: 50vmin;
+}
