@@ -1,14 +1,14 @@
 /* 
 Unidades de Medida
-  1) Absolutas (Su valor no cambia, son unidades del mundo real)
+  1) Absolutas (Su valor no cambia, son unidades del mundo real) -ESTAS MEDIDAS SI ES QUE ES PARA IMPRESIÓN-
     pc, cm, mm, in, Q
     pt (1/72in)
     px (1/96in)
   2) Relativas (Su valor es relativo a un contexto)
     em, rem, ex, ch - al tamaño de la fuente
       em - basada en la anchura de la "m" de la fuente del elemento
-      rem(rootem) -  basada en la anchura de la "m" de la fuente del elemento raíz (html)
-      ex - basada en la altura de la "x" de la fuente del elemento
+      rem(rootem) -  basada en la anchura de la "m" de la fuente del elemento raíz (html) -TIPOGRAFIAS EN REMS
+      ex - basada en la altura de la "x" de la fuente del elemento - SI QUEREMOS QUE DETERMINADAS PALABRAS ENTREN EN UNA TARJETA
       ch - basada en la anchura del "0" de la fuente del elemento
     % - al tamaño del contenedor
     vw, vh, vmin, vmax - al tamaño del viewport
@@ -24,7 +24,7 @@ Unidades de Medida
 html {
   box-sizing: border-box;
   /* font-size: 20px; */
-  font-size: 16px;  /* por defecto */
+  font-size: 16px;  /* por defecto - SIEMPRE DEFINIRLO EN PIXELES*/ 
 }
 *,
 *::after,
