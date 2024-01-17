@@ -1,0 +1,37 @@
+/* variable, es un espacio que se ocupa en nuestra memoria con algun dato*/
+/* para que nuestras variables existan en todo el html, tenemos que hacerlo mediante roots */
+:root {
+    color: cornflowerblue;
+    --default-bg-color: orange;
+}
+
+html {
+    color: red; /* aunque pudiera quedar este color por cascada, en realidad va a quedar el que va por root, le gana por especificidad */
+}
+
+.custom-props-1 {
+    /* cuando empieza con 2 guiones, css sabe que estás declarando una variable */
+    --primary-color:gray; /* almacenamos valores */
+    --font-size: 32px;
+    background-color: var(--primary-color); /* mandamos a llamar a la variable */
+}
+
+.custom-props-2 { 
+    background-color: var(--default-bg-color);
+    border: thin solid var(--border-color);
+    padding: 1rem;
+}
+
+.custom-props-3 { 
+    font-size: var(--font-size);
+    border: thin solid var(--border-color);
+}
+
+.title-props {
+    --primary-color: navy; /* podemos crear esta variable dentro de este selector, cada una existe dentro de su mismo contexto */
+    color: var(--primary-color, orange); /* no lo toma, pero si no lo encuentra 
+    le podemos dar un segundo valor, encuentra este color */
+    background-color: var(--default-bg-color);
+}
+
+
