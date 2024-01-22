@@ -1,13 +1,20 @@
 /* variable, es un espacio que se ocupa en nuestra memoria con algun dato*/
 /* para que nuestras variables existan en todo el html, tenemos que hacerlo mediante roots */
 :root {
-    color: cornflowerblue;
+    color: rgb(31, 79, 170);
     --default-bg-color: orange;
 }
 
 html {
     color: red; /* aunque pudiera quedar este color por cascada, en realidad va a quedar el que va por root, le gana por especificidad */
+    box-sizing: border-box;
 }
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}/* que todos los elementos hereden */
 
 .custom-props-1 {
     /* cuando empieza con 2 guiones, css sabe que estás declarando una variable */
@@ -34,4 +41,11 @@ html {
     background-color: var(--default-bg-color);
 }
 
-
+.ch-10 {
+    --padding-size: 2ch; /* al hacer este calculo, solo modificariamos aca */
+    --num-ch:10ch;
+    background-color: var(--default-bg-color);
+    font-size: 2 rem;
+    padding: var(--padding-size);
+    width: calc(var(--num-ch) + var(--padding-size) * 2) /* son 2, por los lados, dejar espacio entre los calculos y el signo, en este caso la suma */
+}
