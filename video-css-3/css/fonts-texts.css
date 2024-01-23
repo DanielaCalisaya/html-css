@@ -1,0 +1,27 @@
+/* Estilos de la fuente
+font-family
+font-size
+font-weight
+font-style
+font-variant
+line-height - interlineado
+*/
+
+.font {
+    font-family: monospace; /* tipografia tipo código */
+    font-family:'Courier New', Courier, monospace;
+    /* conjuntos de familia, encuentra la primera, si no está esa, carga la segunda y asi sucesivamente */
+    font-size: 32px;
+    font-weight: bold; /* el grosor igual depende de que tipografia elijamos */
+    font-style: oblique; /* estilo que le queremos dar */
+    /*font-variant: small-caps;  convierte a todas en mayusculas */
+    font-variant: normal;
+    line-height: 2;
+}
+
+/* font
+Shorthand property for font-style font-variant font-weight font-size line-height and font-family. 
+Si tuvieramos que usar todos, tendrian que estar en este orden
+ej: 
+font: italic small-caps bold 24px / 1.5 monospace  -> en orden y recordar poner el guión
+*/
