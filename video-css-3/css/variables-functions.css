@@ -49,3 +49,18 @@ html {
     padding: var(--padding-size);
     width: calc(var(--num-ch) + var(--padding-size) * 2) /* son 2, por los lados, dejar espacio entre los calculos y el signo, en este caso la suma */
 }
+
+.min-max {
+    background-color: blueviolet;
+    margin-top: 1rem;
+    width: min(300px, 20vw); /* se puede tener más de 2 valores */
+    height: max(200px, 25vh);
+}
+
+h1 {
+    font-size: clamp(2rem, 1rem + 3vw, 3rem); 
+    /* nos permite hacer cálculos también, y al tener
+    un parámetro en vw, permite que sea dinámico,
+    perfecto para los títulos asi no usamos media querys */
+}
+
