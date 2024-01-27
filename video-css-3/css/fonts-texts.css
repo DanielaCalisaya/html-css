@@ -25,3 +25,38 @@ Si tuvieramos que usar todos, tendrian que estar en este orden
 ej: 
 font: italic small-caps bold 24px / 1.5 monospace  -> en orden y recordar poner el guión
 */
+
+/* En el caso de que tenga mi tipografia en mi ordenador
+Formato woff o woff2 - Web Open Font Format 
+
+font-display:
+auto- permite que el navegador utilice el método predeterminado que suele ser block
+block - oculata brevemente el texto hasta que la fuente haya sido descargada por completo
+swap - indica al navegador que utilice la fuente alternativa para mostrar el texto hasta que 
+       la fuente personalizada se haya cargado por completo
+fallback - es una mexcla de auto y swap
+opcional - ocultará el texto, luego lo cargará con la fuente alternativa 
+           y finalmente aplicará la fuente personalizada
+*/
+@font-face {
+    font-family: "Chalet"; /* le asignamos un nombre */
+    src: url("../assets/Chalet.woff")format("woff"); /* le indicamos la ruta y el tipo*/
+   /* src: url("../assets/Chalet.woff2")format("woff2"); se pueden ir a buscar varios origenes*/
+   font-display: swap;
+}
+
+.chalet {
+    font-family: "Chalet", san-serif; /* poner una opcional */
+    font-size: 2rem;
+}
+
+@font-face {
+    font-family: "Pecita";
+    src: url("../assets/Pecita.woff")format("woff");
+    font-display: swap;
+}
+
+.pecita {
+    font-family: "Pecita", cursive;
+    font-size: 2rem;
+}
