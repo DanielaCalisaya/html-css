@@ -61,7 +61,62 @@ opcional - ocultará el texto, luego lo cargará con la fuente alternativa
     font-size: 2rem;
 }
 
-.ralewey {
+/* https://fonts.google.com/ */
+.raleway {
     font-family: 'Raleway', sans-serif;
     font-size: 2rem;
+}
+
+/* 
+text-aling
+text-decoration
+text-indent
+text-overflow (para q funcione necesitamos las siguientes 2 cosas activadas)
+    overflow hidden   -> oculta el contenido que desborda
+    white-space: nowrap
+text-transform
+letter-spacing   -> espaciado de cada caracter
+white-space  -> que el navegador respete todos los espacios en blanco que le hemos dado
+word-break  -> rompe las palabras
+word-spacing  -> espaciado entre las palabras
+writing-mode  -> escritura en oriente no es igual que en occidente(puede que sea vertical)
+*/
+
+.text {
+    font-size: 2rem;
+    text-align: left;
+    text-decoration: wavy;
+    text-indent: 2rem; /* le da una sangria al párrafo */
+    text-transform: uppercase; /* todas en mayuscula */
+    text-transform: capitalize; /* letra inicial en mayuscula */
+    text-transform: lowercase;
+    letter-spacing: 1rem;
+    word-break: break-all; /* rompe las palabras, para completar la caja */
+    writing-mode: horizontal-tb; /* por defecto */
+    writing-mode: vertical-rl;
+}
+
+.text a {
+    text-decoration: none; 
+    /* saca el subrayado pero queda el azul del enlace */
+}
+
+.text-overflow {
+    background-color: rgb(122, 122, 122);
+    border: thin solid blue;
+    font-size: 2rem;
+    padding: 1rem;
+    width: 50%;
+    text-overflow: ellipsis; /* para cards, si el texto no alcanza y desborda, pondrá al final ... */
+    overflow: hidden; 
+    white-space: nowrap;
+}
+
+.white-space {
+    white-space: pre; /* respeta los espacios y queda como código */
+}
+
+.word-spacing {
+    font-size: 2rem;
+    word-spacing: 2rem;
 }
