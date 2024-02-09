@@ -120,3 +120,22 @@ writing-mode  -> escritura en oriente no es igual que en occidente(puede que sea
     font-size: 2rem;
     word-spacing: 2rem;
 }
+
+/* icons */
+/* https://fonts.google.com/icons */
+/* https://icons.getbootstrap.com/  -> icons de boostrap */
+/*  */
+/* cdnjs - https://cdnjs.com/ */
+.material-symbols-outlined {
+    font-family: 'Material Symbols Outlined';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  }
