@@ -1,0 +1,36 @@
+.box {
+    background-color: black;  
+    margin: 2rem auto;
+    width: 400px;
+    height: 400px;
+    border: thick solid purple;
+}
+
+.border-radius {
+    margin-left: auto;
+    margin-right: auto; 
+    border-radius: 2rem;
+    border-top-left-radius: 4rem;
+    border-top-right-radius: 4rem;
+    border-bottom-left-radius: 4rem;
+    border-radius: 1rem 0rem 4rem;
+    border-radius: 2rem;
+}
+
+/* bordes elipticos */
+.border-radius-2 {
+    /* si queremos solo en 2 angulos primero tomara en la vertice x, el tramo mas corto desde el centro a afuera */
+    border-radius: 2rem/6rem;
+    border-radius: 4rem/6rem 8rem 0rem;
+}
+
+.border-radius-3 {
+    /* las medidas podriamos darlas en todas los tipos de medidas vistas */
+    border-radius: 50%;
+} 
+
+.border-radius-4 {
+    width: 400px;
+    height: 200px;
+    border-radius: 50%; /* genera un elipse */
+}
