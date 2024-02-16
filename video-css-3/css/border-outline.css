@@ -34,3 +34,17 @@
     height: 200px;
     border-radius: 50%; /* genera un elipse */
 }
+
+.outline { /* es como un aura */
+    outline-width: 5px;
+    outline-style: dotted;
+    outline-color: blue;
+    outline: thick solid lightpink;
+    color: white;
+    text-align: center;
+    /* border-width: 20px; */ /* el borde forma parte de la caja */
+    /* outline-width: 100px; */
+    outline-offset: -3rem; /* en sentido negativo se contrae la caja */
+    
+}
+
