@@ -1,0 +1,26 @@
+img { /* es bueno antes definir estas opciones para una imagen responsiva */
+    max-width: 100%;
+    height: auto;
+} 
+
+.card {
+    border: medium solid plum;
+    width: 400px;
+    height: 400px; /* como tiene la propiedad auto, se sigue adaptando */
+}
+
+.card img {
+    background-color: darkseagreen;
+    height: 300px; /* se deformaria la imagen */
+    /* tenemos un tamaño especifico pero la imagen se dorma a ese tamaño: opciones -> */
+    /* object-fit: fill; valor por defecto*/ 
+    object-fit: cover; /* no se deforma pero se centra, entonces pasa a cortar*/
+    object-fit: contain;
+    object-fit: none;
+    object-fit: scale-down; /* toma el valor q sea menor de los valores contain y none */
+    object-position: left top;
+    object-position: right bottom;
+    object-position: left top;
+    object-position: -50% center;
+    object-position: 50% 50%;
+}
