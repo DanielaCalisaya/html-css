@@ -1,0 +1,36 @@
+.list {
+    list-style-type: disc; /*por defecto */
+    list-style-type: square; 
+    list-style-type: circle;
+    list-style-type: lower-roman; /* romano */
+    list-style-type: decimal;
+    list-style-type: lower-greek; /* alfabeto griego */
+    list-style-image: url("../assets/myLove.png"); /* imagen en la viñeta, pero se deformará si es una imagen muy grande */
+    list-style-image: none;
+}
+
+.list li { /* reemplazamos las viñetas con imagenes */
+    list-style-type: none;
+}
+
+.list li::before { /* la fotito quedará al inicio del item */
+    content: "";
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    background-image: url("../assets/logo-miCosturerito.png");
+    background-size: contain;
+    background-repeat: no-repeat; /* para que no se repita en la misma linea */
+    background-position: center;
+}
+
+.list-2 li{
+    background-color: blueviolet;
+    list-style-position: inside; /* el texto rebasa los margenes de las viñetas */
+    list-style-position: outside; /* valor por defecto, queda la viñeta afuera */
+}
+
+.list-3 {
+    background-color: brown;
+    list-style: lower-latin outside;
+}
