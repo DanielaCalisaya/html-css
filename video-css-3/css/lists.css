@@ -34,3 +34,20 @@
     background-color: brown;
     list-style: lower-latin outside;
 }
+
+/* Esto es para párrafos y listas, no para maquetar textos en párrafos */
+.text-column-4 {
+    list-style-position: inside; /* la línea va después */
+    column-count: 4;
+    column-gap: 1rem;
+    column-rule: medium dotted rebeccapurple; /* linea entre columnas */
+    column-width: 100px; /* tamaño minimo de ancho para la columna */
+}
+
+.text-column-3 {
+    list-style-position: inside; /* la línea va después */
+    column-count: 3;
+    column-gap: 1rem;
+    column-rule: medium solid blue; 
+    column-width: 100px;
+}
