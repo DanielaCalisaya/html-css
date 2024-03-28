@@ -37,3 +37,11 @@ https://caniuse.com/
 
 Guía ortográfica - Buenas prácticas para escribir HTML y CSS
 https://codeguide.co/
+
+DOCUMENT 3° VIDEO
+
+Obtención de colores
+https://htmlcolorcodes.com/es/
+
+En el buscador: RGB to HEX 
+Convertidor
