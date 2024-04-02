@@ -1,0 +1,35 @@
+html {
+    box-sizing: border-box;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+
+*, 
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    border: thick solid #000;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box-shadow {
+    /* mov en x
+    mov en y
+    desenfoque radial: blur 
+    expansión del desenfoque: spread-blur
+    sombra interna o externa: inset - outset */
+    color: navy; /* si no se especifica el color heredará el color del cuadro, del borde */
+    font-size: 2rem;
+    text-align: center;
+    box-shadow: -1rem -1rem 1rem 1rem;
+    box-shadow: 1rem 1rem 1rem 1rem #0005; /* color negro pero al 50% de opacidad */
+    box-shadow: 1rem 1rem 1rem 1rem #4fc5cf inset;
+    /* text-shadow: mov-x mov-y blur color */ 
+    text-shadow: -1rem -1rem 0.5rem hotpink; /* blur, mientras mas nos acercamos a 0, más se nota las palabra */
+}
