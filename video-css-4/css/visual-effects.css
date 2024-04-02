@@ -134,3 +134,34 @@ html {
         blue 240deg
     );
 }
+
+.repeat-gradient-linear {
+    background-image: repeating-linear-gradient(
+        blue 0 10px, 
+        pink 10px 20px, 
+        magenta 20px 30px
+    );
+    background-image: repeating-linear-gradient(
+        45deg, /* <- cambio la direccion */
+        blue 0 10px, 
+        pink 10px 20px, 
+        magenta 20px 30px
+    );
+}
+
+.repeat-gradient-radial {
+    background-image: repeating-radial-gradient(
+        circle 4rem,
+        cyan 0 10px,
+        black 10px 20px,
+        magenta 20px 30px
+    );
+}
+
+.repeat-gradient-conic {
+    background-image: repeating-conic-gradient(
+        red 0 8%,
+        yellow 8% 16%,
+        green 16% 24%
+    );
+}
