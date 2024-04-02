@@ -16,9 +16,10 @@ html {
     border: thick solid #000;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 4rem;
 }
 
-.box-shadow {
+.shadows {
     /* mov en x
     mov en y
     desenfoque radial: blur 
@@ -32,4 +33,25 @@ html {
     box-shadow: 1rem 1rem 1rem 1rem #4fc5cf inset;
     /* text-shadow: mov-x mov-y blur color */ 
     text-shadow: -1rem -1rem 0.5rem hotpink; /* blur, mientras mas nos acercamos a 0, más se nota las palabra */
+}
+
+.shadows-multiple {
+    font-size: 2rem;
+    text-align: center;
+    box-shadow: 1rem 1rem 1rem 1rem #0005, 1rem 1rem 1rem 1rem hotpink inset, -1rem -1rem 0.5rem 2rem rgb(87, 0, 128);
+    text-shadow: -1rem -1rem 0.25rem navy, 1rem 1rem 0.25rem rgb(39, 243, 230);
+}
+
+/* filtros */
+/* filter: drop-shadow(mov-x, mov-y, blur-radius, color); */
+.drop-shadow {
+    width: 600px;
+    height: auto;
+}
+
+.drop-shadow img {
+    max-width: 100%;
+    box-shadow: 1rem 1rem 1rem red; /* aplica a la caja */
+    filter: drop-shadow(1rem 1rem 1rem steelblue); 
+    /* la sombra se la aplica a la foto (una foto con transparencia), no puede sombra multiple */
 }
