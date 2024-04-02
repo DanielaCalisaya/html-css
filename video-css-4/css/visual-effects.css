@@ -105,3 +105,32 @@ html {
         white 50%
     );
 }
+
+.conic-gradient {
+    background-image: conic-gradient(navy, magenta);
+    background-image: conic-gradient(navy, magenta, white);
+    background-image: conic-gradient(navy 0% 50%, magenta 60%, white 80%);/* se puede controlar con porcentaje */
+    background-image: conic-gradient( /* en grados */
+        navy 0deg 90deg, 
+        magenta 120deg 240deg, 
+        white 270deg
+    );
+    background-image: conic-gradient( /* el extremo del cono cambia */
+        from 90deg, 
+        navy 0deg 90deg, 
+        magenta 120deg 240deg, 
+        white 270deg
+    );
+    background-image: conic-gradient( 
+        from 180deg, 
+        navy 0deg 90deg, 
+        magenta 120deg 240deg, 
+        white 270deg
+    );
+    background-image: conic-gradient(
+        from 90deg,
+        red 0deg 120deg,
+        white 120deg 240deg,
+        blue 240deg
+    );
+}
