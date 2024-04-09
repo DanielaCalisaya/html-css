@@ -165,3 +165,15 @@ html {
         green 16% 24%
     );
 }
+
+.chart-gradient {
+    background-image: conic-gradient(cyan 0% 50%, magenta 50% 80%, grey 80%);
+    border-radius: 50%;
+}
+
+.donut-gradient {
+    background-image: 
+        radial-gradient(white 20%, black 21%, transparent 23%), 
+        conic-gradient(cyan 0% 50%, magenta 50% 80%, grey 80%);
+    border-radius: 50%;
+}
