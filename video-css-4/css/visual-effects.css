@@ -192,10 +192,14 @@ html {
     height: 100%;
     object-fit: cover;
     object-position: 0 50%; /* que empieze en cero del lado izquierdo */
+}
+
+.filter {
+    /* 
     filter: blur(1rem);
     filter: blur(0.25rem);
     filter: blur(0.15rem);
-    filter: brightness(1); /* de 0 a 1 */
+    filter: brightness(1); de 0 a 1 
     filter: brightness(0.15); 
     filter: contrast(0);
     filter: contrast(0.75);
@@ -203,17 +207,27 @@ html {
     filter: grayscale(0.50);
     filter: grayscale(1); 
     filter: sepia(0.25);
-    filter: sepia(1); /* vintage */
+    filter: sepia(1); vintage
     filter: hue-rotate(30deg);
     filter: hue-rotate(60deg);
     filter: hue-rotate(150deg);
     filter: hue-rotate(240deg);
-    filter: invert(0); /* invierte los colores */
+    filter: invert(0); invierte los colores
     filter: invert(1); 
-    filter: opacity(0); /* de 0 a 75 */
+    filter: opacity(0); de 0 a 75 
     filter: opacity(0.50);
     filter: opacity(0.75);
     filter: saturate(0);
     filter: saturate(0.75);
-    filter: saturate(3);
+    filter: saturate(3); 
+    */
+    filter: invert(1);
+}
+
+.filters-multiple {
+    filter: 
+        blur(0.1rem)
+        hue-rotate(270deg)
+        opacity(0.75)
+        invert(1);
 }
