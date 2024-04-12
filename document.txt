@@ -45,3 +45,8 @@ https://htmlcolorcodes.com/es/
 
 En el buscador: RGB to HEX 
 Convertidor
+
+DOCUMENT 4| VIDEO
+
+Clip Path Generation
+https://bennettfeely.com/clippy/

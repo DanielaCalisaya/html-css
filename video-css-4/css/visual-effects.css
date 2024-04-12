@@ -330,3 +330,25 @@ html {
     */
     background-blend-mode: screen;
 }
+
+.clip-path {
+    clip-path: circle();
+    clip-path: circle(10rem at left bottom);/* las 4 direcciones y conbinaciones*/
+    clip-path: circle(100px at 0 0);
+    clip-path: circle(100px at 50%);
+    clip-path: circle(105px at 52% 32%);
+    clip-path: ellipse();
+    clip-path: ellipse(1rem 2rem); /* 1rem para x, 2rem para y */
+    clip-path: ellipse(200px 100px);
+    clip-path: ellipse(200px 100px at left bottom);
+    clip-path: ellipse(150px 50px at right top);
+    clip-path: ellipse(200px 100px at 30% 40%);
+    clip-path: inset(2rem);
+    clip-path: inset(2rem 4rem);
+    clip-path: inset(2rem 4rem 6rem);
+    clip-path: inset(2rem round 1rem); 
+    clip-path: polygon(0 0, 100% 0, 50% 100%); /* hasta 5 */
+    clip-path: polygon(20% 0%, 0 0, 30% 50%, 0% 80%, 0 100%, 50% 70%, 100% 100%, 100% 80%, 70% 50%, 100% 0, 80% 0%, 50% 30%);
+    clip-path: polygon(75% 0%, 100% 50%, 100% 100%, 0% 100%, 25% 50%, 0 16%);
+}   
+
