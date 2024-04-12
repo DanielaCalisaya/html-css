@@ -291,7 +291,8 @@ html {
 }
 
 .bland-modes img {
-    mix-blend-mode: normal; /* default */
+    /*
+    mix-blend-mode: normal;  default 
     mix-blend-mode: color;
     mix-blend-mode: color-dodge;
     mix-blend-mode: color-burn;
@@ -306,5 +307,26 @@ html {
     mix-blend-mode: soft-light;
     mix-blend-mode: lighten;
     mix-blend-mode: darken;
+    */
     mix-blend-mode: overlay;
+}
+
+.bg-blend-modes {
+    background-image: url("../../img/arnold.gif"), url("../../img/start.png");
+    background-size: cover;
+    /*     
+    background-blend-mode: color;
+    background-blend-mode: multiply;
+    background-blend-mode: darken;
+    background-blend-mode: lighten;
+    background-blend-mode: soft-light;
+    background-blend-mode: hue;
+    background-blend-mode: exclusion;
+    background-blend-mode: saturation;
+    background-blend-mode: luminosity;
+    background-blend-mode: difference;
+    background-blend-mode: color-burn;
+    background-blend-mode: color-dodge; 
+    */
+    background-blend-mode: screen;
 }
