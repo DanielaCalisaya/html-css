@@ -1,0 +1,55 @@
+html {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+}
+
+.slides { /* para el efecto de este ejercicio -> */
+    width: 100%;
+    height: 100vh; /* Importante: este debe tener la medida del viewport */
+    overflow-y: scroll; /* esto debe estar activado */
+    /* scroll-snap-type: [X | Y | inline | block | both][mandatory | proximity]; */
+    scroll-snap-type: none; /* no hacer el efecto */
+    scroll-snap-type: block mandatory; /* para que funciones, la caja hija debe tener la propiedad activada -> */
+    scroll-snap-type: y mandatory;
+    scroll-snap-type: y proximity;
+    scroll-snap-type: mandatory; /* mueve las diapositivas justas segun el viewport */
+}
+
+.slide {
+    width: 100%;
+    height: inherit;
+    background-color: #1e2345;
+    scroll-snap-align: none;
+    scroll-snap-type: end;
+    scroll-snap-type: start;
+    scroll-snap-type: center;
+}
+
+.slide:nth-child(even) {
+    background-color: #108eb4;
+}
+
+.slide-container {
+    width: 100%;
+    width: 80%; /* anchura del texto */
+    height: inherit;
+    margin:  0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 3vw;
+    color: aliceblue;
+
+}
