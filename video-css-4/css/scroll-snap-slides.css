@@ -51,5 +51,36 @@ body {
     align-items: center;
     font-size: 3vw;
     color: aliceblue;
+}
 
+.carousel { /* scroll horizontal */
+    border: thick solid #d938f0;
+    display: flex;
+    width: 50%;
+    height: 50vh;
+    overflow-x: hidden; 
+}
+
+.carousel-container { /* anchura y altura bien definidas y overflow en la linea q queremos controlar, en este caso x */
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 100%);
+    overflow-x: scroll ;
+    overflow-y: hidden;
+    scroll-snap-type: proximity;
+    scroll-snap-type: x mandatory;
+}
+
+.carousel-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #108eb4;
+    scroll-snap-align: start;
+    scroll-snap-align: center;
+}
+
+.carousel-slide:nth-child(even) {
+    background-color: #1e2345;
 }
