@@ -53,6 +53,9 @@ html {
     transition: border-color 2s linear 1s; /* aquí por cascada lo anterior se reemplaza */
     transition: all 2s ease-in-out 250ms; 
     /* todas las propiedades que sean animables aplica estilo, en este caso son pocas */
+    transition: background-color 2s ease-in-out 250ms,
+        border-color 2s ease-in-out 250ms,
+        border-radius 2s ease-in-out 250ms
 }
 
 .transitions .box:hover {
@@ -83,4 +86,39 @@ html {
 
 .transitions .card img:hover {
     object-position: 100% 50%;
+}
+
+.transform-2d img {
+    transition: transform 2s ease-in-out;
+}
+
+.transform-2d img:hover {
+    transform: none;  
+    transform: translateX(5rem);
+    transform: translateY(5rem);
+    transform: translateX(-5rem); /* se va en sentido contrario */
+    transform: translateZ(5rem); /* no aplica, seria para las transformaciones 3d */
+    transform: translate(-5rem, 5rem); /* direcciona en diagonal */
+    transform: translate(50%, 50%); /* no hay porcentaje negativo, pero en el caso de las transformaciones si */
+    transform: translate(-50%, -50%);
+    transform: translate(-50%, 100px);
+    transform: scaleX(2); /* se estira la imagen horizontalmente */
+    transform: scaleY(0.5); /* se achica */
+    transform: scaleZ(1.5); /* necesitamos perspectiva y transformación en 3d para esta */
+    transform: scale(1.5, 1.5); /* crece de ambos lados */
+    transform: scale(-1, -1); /* se reduce, luego se expande pero la imagen invertida */
+    transform: scale(-0.5, -0.5);
+    transform: rotateX(60deg);
+    transform: rotateX(90deg); /* es como si quedara la img mirando hacia arriba */
+    transform: rotateY(60deg);
+    transform: rotateY(90deg);
+    transform: rotateZ(60deg); /* gira en el sentido del reloj */
+    transform: rotateZ(-60deg); /* sentido contrario del reloj */
+    transform: rotateZ(360deg); /* rotateZ en 360 y rotate en 360 seria lo mismo */
+    transform: rotate(-360deg); /* sentido contrario del reloj */
+    transform: skewX(20deg); /* sesgo, en diagonal gira */
+    transform: skewX(-20deg);
+    transform: skewY(20deg);
+    transform: skewY(-20deg);
+    transform: skew(20deg, 20deg);
 }
