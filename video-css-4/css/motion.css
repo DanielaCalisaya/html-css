@@ -131,10 +131,10 @@ html {
         scale(-0.5, -0.5); 
 }
 
-/* Antes de empezar con 3d tener activada la perspectiva 
-.transform-3d {  otra opción, aplicarle a la caja contenedora
+/* Antes de empezar con 3d tener activada la perspectiva. Otra opción, aplicarle a la caja contenedora*/
+.transform-3d {  
     perspective: 10rem;
-} */
+} 
 
 .transform-3d img {
     transition: transform 2s ease-in-out;
@@ -145,6 +145,17 @@ html {
     transform: perspective(1000px) translateZ(4rem); /* profundidad en z, acercar alejar */
     transform: perspective(10rem) translateZ(4rem); 
     transform: perspective(10rem) translateZ(-4rem); /* -4 se aleja */
+    /*  */
+    transform: translate3d(2rem, 50%, -3rem);
+    transform: scaleZ(1.5); /* en este caso no funciona xq la imagen solo tiene 2 medidas, alto y ancho */
+    transform: scale3d(2, 0.5, 3);
+    transform: rotateX(60deg); /* 2d no funciona */
+    transform: rotateX(90deg); 
+    transform: rotateY(60deg); 
+    transform: rotateY(-90deg); /* no puedo generar scroll hacia la izquierda */
+    transform: rotate3d(1, 1, 1, 45deg);
+    transform: rotate3d(1, 0.5, 0, -45deg);
+    transform: rotate3d(-1, 2.5, -2, 60deg);
 }
 
 
