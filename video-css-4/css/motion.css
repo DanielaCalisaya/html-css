@@ -124,6 +124,12 @@ html {
     /* Matrix tiene una carga pesada, link para más info en el document */
     /* matrix scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY() */
     transform: matrix(1, 2, 2, 1, 20, 10);
+    transform: translate(25%, -50%);
+    transform: translate(25%, -50%) 
+        rotate(240deg) 
+        skew(10deg, 20deg) /* sesgo */
+        scale(-0.5, -0.5); 
+
 }
 
 
