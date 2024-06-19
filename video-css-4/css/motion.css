@@ -129,10 +129,23 @@ html {
         rotate(240deg) 
         skew(10deg, 20deg) /* sesgo */
         scale(-0.5, -0.5); 
-
 }
 
+/* Antes de empezar con 3d tener activada la perspectiva 
+.transform-3d {  otra opción, aplicarle a la caja contenedora
+    perspective: 10rem;
+} */
 
+.transform-3d img {
+    transition: transform 2s ease-in-out;
+}
+
+.transform-3d img:hover {
+    transform: translateZ(4rem); /* asi solo no funciona */
+    transform: perspective(1000px) translateZ(4rem); /* profundidad en z, acercar alejar */
+    transform: perspective(10rem) translateZ(4rem); 
+    transform: perspective(10rem) translateZ(-4rem); /* -4 se aleja */
+}
 
 
 
