@@ -179,3 +179,58 @@ html {
 .transform-origin img:hover {
     transform: rotate(360deg);
 }
+
+/* Ejemplo para maquetar una card animada */
+.flip-card-1,
+.flip-card-2 {
+    width: 600px;
+    height: 400px;
+    border: thick solid #000;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5rem;
+
+    position: relative;
+    cursor: pointer;
+    transition: transform 1s ease-in-out;
+    perspective: 10rem;
+    /* transform-style: flat; default */
+    transform-style: preserve-3d; /* que los hijos tengan su perspectiva independiente */
+}
+
+.flip-card-2 {
+    transform-origin: center right;
+}
+
+.flip-card-1:hover {
+    transform: rotateY(180deg);
+}
+
+.flip-card-2:hover {
+    transform: translateX(-100%) rotateY(-180deg);
+}
+
+.flip-card-1 img,
+.flip-card-2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0 50%; 
+}
+
+.flip-face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* backface-visibility: visible; default*/
+    backface-visibility: hidden;
+}
+
+.flip-front {
+    transform: rotateY(0deg);
+}
+
+.flip-back {
+    transform: rotateY(180deg);
+}
+/*  */
